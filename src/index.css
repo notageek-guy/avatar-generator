@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-gray-800;
+  }
+  select {
+    @apply border-2 
+    border-gray-800
+    shadow-lg 
+    rounded-md 
+     
+    
+    bg-gray-700;
+
+  }
+  label {
+    @apply text-white;
+  }
+  option {
+    @apply text-black bg-white;
+  }
+  form {
+    @apply bg-gray-800
+     
+     shadow-lg 
+     shadow-black
+      rounded-lg
+        p-4
+        flex flex-col 
+        mx-auto
+     w-full md:w-1/2
+        
+          text-white;
+  }
+}
